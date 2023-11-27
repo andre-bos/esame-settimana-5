@@ -70,12 +70,14 @@ p {
 
 .card-info {
     font-weight: 400;
-    color: #6b6b6b
+    color: #6b6b6b;
+    margin: 0;
+    margin-right: .5em;
 }
 
 .card-info span {
     display: inline-bock;
-    margin: 0 .3em;
+    margin: 0 .5em;
 }
 
 .author-info span {
@@ -90,6 +92,23 @@ p {
     font-weight: 700;
     color: #f2f2f2;
 
+}
+
+/* section-main-articles: elementi degli articoli */
+
+.main-article-title {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: #242424;
+}
+
+.main-article-title h2 {
+    margin-bottom: .25em;
+}
+
+.main-article-body {
+    color: #6b6b6b;
 }
 
 /* LAYOUT */
@@ -162,6 +181,9 @@ nav a {
 
 section.trending {
     padding: 0 4em;
+    border-bottom: 1px solid #6b6b6b;
+    padding-bottom: 3em;
+    margin-bottom: 3.5em;
 }
 
 .trending-title-container {
@@ -177,10 +199,13 @@ section.trending {
 .columns {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .card-trending {
     display: flex;
+    width: 30%;
+    margin-bottom: 2em;
 }
 
 .card-trending-header {
@@ -194,6 +219,40 @@ section.trending {
     border-radius: 50%;
 }
 
+.footer-info,
+.card-footer {
+    display: flex;
+    align-items: center;
+}
+
+/* section.main-articles */
+
+section.main-articles {
+    padding: 0 4em;
+}
+
+.main-article {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-article-content {
+    width: 65%;
+    align-self: flex-end;
+    border: 3px solid green;
+}
+
+.main-article-img {
+    width: 30%;
+}
+
+.footer-info {
+    width: 90%;
+}
+
+.bookmark-img-container {
+    width: 5%;
+}
 
 /* BOTTONI */
 
@@ -213,4 +272,16 @@ section.trending {
 .btn-primary {
     padding: .6em 3em;
     font-size: 1.25rem;
+}
+
+.btn-tag {
+    display: inline-block;
+    text-decoration: none;
+    color: #6b6b6b;
+    background-color: #f2f2f2;
+    padding: .8em 1.2em;
+    font-size: .813rem;
+    font-weight: 400;
+    margin: 0 .5em;
+    border-radius: 20px;
 }
